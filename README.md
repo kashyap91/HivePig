@@ -26,7 +26,7 @@ You can find more query examples and SQL cheat-sheet at the links below
    * https://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/
    * https://support.treasuredata.com/hc/en-us/articles/360001457347-Hive-Query-Language#hive-example-query-catalog
 
-# PIG (come back to this after week 4 on PIG)
+# PIG (more on this after week 4 on PIG)
 
 1. Install Pig <https://pig.apache.org/docs/r0.15.0/start.html>
 (Optionally, install Hadoop / HDFS and Copy the source files to the HDFS)
