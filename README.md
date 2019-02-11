@@ -17,7 +17,6 @@ Both of these applications can either run on top of a working HDFS / Mapreduce c
       - $ hdfs dfs -chmod g+w /user/hive/warehouse
    1. Run the shell (of the three modes to run HIVE, we will use command line)
       - $ hive
-   
 
 2. Check examples to Create, Load, Query data with Hive (slide 17 onwards)
    * <http://courses.coreservlets.com/Course-Materials/pdf/hadoop/07-Hive-01.pdf>
@@ -26,8 +25,14 @@ Both of these applications can either run on top of a working HDFS / Mapreduce c
 You can find more query examples and SQL cheat-sheet at the links below
    * https://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/
    * https://support.treasuredata.com/hc/en-us/articles/360001457347-Hive-Query-Language#hive-example-query-catalog
-   
-## Some extra help installing PIG:
+
+# PIG (more on this after week 4 on PIG)
+
+1. Install Pig <https://pig.apache.org/docs/r0.15.0/start.html>
+(Optionally, install Hadoop / HDFS and Copy the source files to the HDFS)
+
+
+## Some extra help installing PIG & HIVE:
  
 Download PIG tar file
 wget http://ftp.heanet.ie/mirrors/www.apache.org/dist/pig/pig-0.17.0/pig-0.17.0.tar.gz 
@@ -41,9 +46,10 @@ Outlined here in detail:
 https://archanaschangale.wordpress.com/2013/10/14/pig-installation-on-ubuntu/
 (You may not have to cd into downloads & may need to use nano instead of gedit to edit files)
 
-
-# PIG (more on this after week 4 on PIG)
-
-1. Install Pig <https://pig.apache.org/docs/r0.15.0/start.html>
-(Optionally, install Hadoop / HDFS and Copy the source files to the HDFS)
-
+Download HIVE tar file 
+wget http://ftp.heanet.ie/mirrors/www.apache.org/dist/hive/stable-2/apache-hive-2.3.2-bin.tar.gz 
+ 
+Copy the same procedure as for pig above. (Unpack, move, set HIVE_HOME and add to path)
+ 
+Then set hadoop home variable in hive as per the following: 
+https://stackoverflow.com/questions/36044498/issues-with-installing-hive-on-ubuntu-hadoop-home-or-hadoop-prefix-must-be-se
