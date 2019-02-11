@@ -2,6 +2,27 @@ This lab covers material from Week 3 and Week 4 of CA675 (Hive and Pig).
 We will install HIVE and PIG and start practicing with their basic functions separately. 
 Both of these applications can either run on top of a working HDFS / Mapreduce cluster, or they can run in local mode (useful for debugging).
 
+# Install Java
+
+# Install Java 8
+
+      `apt-get install -y python-software-properties
+      add-apt-repository ppa:webupd8team/java
+      apt-get -y -q update
+      echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+      apt-get -y install oracle-java8-installer
+      update-java-alternatives -s java-8-oracle
+      
+# Set JAVA_HOME Variable
+
+You can use this command to find java home location ( should be /usr/lib/jvm/java-8-oracle/jre/ )
+`readlink -f /usr/bin/java | sed "s:bin/java::"`
+
+Set JAVA_HOME Variable
+`echo '\n\n JAVA_HOME="/usr/lib/jvm/java-8-oracle/jre/"' >> /etc/environment source /etc/environment``
+
+# Install Hadoop
+
 # HIVE
 
 1. Install Hive (see slides Week 3 and Manual link below)
