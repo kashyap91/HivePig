@@ -26,6 +26,21 @@ Both of these applications can either run on top of a working HDFS / Mapreduce c
 You can find more query examples and SQL cheat-sheet at the links below
    * https://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/
    * https://support.treasuredata.com/hc/en-us/articles/360001457347-Hive-Query-Language#hive-example-query-catalog
+   
+## Some extra help installing PIG:
+ 
+Download PIG tar file
+wget http://ftp.heanet.ie/mirrors/www.apache.org/dist/pig/pig-0.17.0/pig-0.17.0.tar.gz 
+ 
+Then carry out the follow steps to get it working 
+1. Unpack 
+2. Move folder 
+3. Set PIG_HOME
+4. Add to path
+Outlined here in detail:
+https://archanaschangale.wordpress.com/2013/10/14/pig-installation-on-ubuntu/
+(You may not have to cd into downloads & may need to use nano instead of gedit to edit files)
+
 
 # PIG (more on this after week 4 on PIG)
 
