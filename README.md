@@ -2,9 +2,7 @@ This lab covers material from Week 3 and Week 4 of CA675 (Hive and Pig).
 We will install HIVE and PIG and start practicing with their basic functions separately. 
 Both of these applications can either run on top of a working HDFS / Mapreduce cluster, or they can run in local mode (useful for debugging).
 
-# Install Java
-
-# Install Java 8
+## Install Java 8
 
       apt-get install -y python-software-properties
       add-apt-repository ppa:webupd8team/java
@@ -13,7 +11,7 @@ Both of these applications can either run on top of a working HDFS / Mapreduce c
       apt-get -y install oracle-java8-installer
       update-java-alternatives -s java-8-oracle
       
-# Set JAVA_HOME Variable
+## Set JAVA_HOME Variable
 
 You can use this command to find java home location ( should be /usr/lib/jvm/java-8-oracle/jre/)<br/>
 ```
@@ -25,11 +23,20 @@ Set JAVA_HOME Variable<br/>
       echo '\n\n JAVA_HOME="/usr/lib/jvm/java-8-oracle/jre/"' >> /etc/environment
       source /etc/environment
 ```
-# Install Hadoop
 
+## Install Hadoop
 
+      wget http://www-eu.apache.org/dist/hadoop/common/hadoop-2.9.0/hadoop-2.9.0.tar.gz
+      tar xzf hadoop-2.9.0.tar.gz
+      mv hadoop-2.9.0 /usr/local/hadoop
+      chmod -R 777 /usr/local/hadoop
+      
+## Set JAVA_HOME Variable in Hadoop
+```
+      echo '\n\n export JAVA_HOME="/usr/lib/jvm/java-8-oracle/jre/"' >> /usr/local/hadoop/etc/hadoop/hadoop-env.sh
+```
 
-# HIVE
+## HIVE
 
 1. Install Hive (see slides Week 3 and Manual link below)
    <https://cwiki.apache.org/confluence/display/Hive/GettingStarted>
@@ -53,7 +60,7 @@ You can find more query examples and SQL cheat-sheet at the links below
    * https://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/
    * https://support.treasuredata.com/hc/en-us/articles/360001457347-Hive-Query-Language#hive-example-query-catalog
 
-# PIG (more on this after week 4 on PIG)
+## PIG (more on this after week 4 on PIG)
 
 1. Install Pig <https://pig.apache.org/docs/r0.15.0/start.html>
 (Optionally, install Hadoop / HDFS and Copy the source files to the HDFS)
