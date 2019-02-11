@@ -35,7 +35,7 @@ You can find more query examples and SQL cheat-sheet at the links below
 ## Some extra help installing PIG & HIVE:
  
 Download PIG tar file
-wget http://ftp.heanet.ie/mirrors/www.apache.org/dist/pig/pig-0.17.0/pig-0.17.0.tar.gz 
+`wget http://ftp.heanet.ie/mirrors/www.apache.org/dist/pig/pig-0.17.0/pig-0.17.0.tar.gz`
  
 Then carry out the follow steps to get it working 
 1. Unpack 
@@ -47,7 +47,7 @@ https://archanaschangale.wordpress.com/2013/10/14/pig-installation-on-ubuntu/
 (You may not have to cd into downloads & may need to use nano instead of gedit to edit files)
 
 Download HIVE tar file 
-wget http://ftp.heanet.ie/mirrors/www.apache.org/dist/hive/stable-2/apache-hive-2.3.2-bin.tar.gz 
+`wget http://ftp.heanet.ie/mirrors/www.apache.org/dist/hive/stable-2/apache-hive-2.3.2-bin.tar.gz` 
  
 Copy the same procedure as for pig above. (Unpack, move, set HIVE_HOME and add to path)
  
