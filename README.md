@@ -6,7 +6,7 @@ Both of these applications can either run on top of a working HDFS / Mapreduce c
 
 # Install Java 8
 
-      `apt-get install -y python-software-properties
+      apt-get install -y python-software-properties
       add-apt-repository ppa:webupd8team/java
       apt-get -y -q update
       echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
@@ -15,13 +15,15 @@ Both of these applications can either run on top of a working HDFS / Mapreduce c
       
 # Set JAVA_HOME Variable
 
-You can use this command to find java home location ( should be /usr/lib/jvm/java-8-oracle/jre/ )
+You can use this command to find java home location ( should be /usr/lib/jvm/java-8-oracle/jre/)
 `readlink -f /usr/bin/java | sed "s:bin/java::"`
 
 Set JAVA_HOME Variable
-`echo '\n\n JAVA_HOME="/usr/lib/jvm/java-8-oracle/jre/"' >> /etc/environment source /etc/environment``
+`echo '\n\n JAVA_HOME="/usr/lib/jvm/java-8-oracle/jre/"' >> /etc/environment source /etc/environment\``
 
 # Install Hadoop
+
+
 
 # HIVE
 
