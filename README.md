@@ -62,10 +62,39 @@ You can find more query examples and SQL cheat-sheet at the links below
    * https://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/
    * https://support.treasuredata.com/hc/en-us/articles/360001457347-Hive-Query-Language#hive-example-query-catalog
 
-## PIG (more on this after week 4 on PIG)
+## PIG 
 
 1. Install Pig <https://pig.apache.org/docs/r0.15.0/start.html>
 (Optionally, install Hadoop / HDFS and Copy the source files to the HDFS)
+
+1. Toy Example:
+      - Create two CSV file as follows:
+            * A.txt containing two lines: (0,1,2) and (1,3,4)
+            * B.txt containing two lines: (0,5,2) and (1,7,8)
+      - Run the PIG Latin commands below, one by one from shell, and observe what is contained in d, e, f and g after each dump (note the content of g and reflect upon the way pig handles schema on the fly
+
+```
+a = LOAD ‘A.txt’ using PigStorage(‘,’); 
+b = LOAD ‘B.txt’ using PigStorage(‘,’); 
+c = UNION a,b;
+SPLIT c INTO d IF $0==0, e IF $0==1; 
+dump d;
+dump e;
+f = FILTER c BY $1>3;
+dump f;
+A = LOAD ‘A.txt’ using PigStorage(‘,’) as (a1:int, a2:int, a3:int); 
+B = LOAD ‘B.txt’ using PigStorage(‘,’) as (b1:int, b2:int, b3:int); C = UNION A,B;
+g = FOREACH c GENERATE a2, a2*a3
+dump g;
+```
+
+1. Example 1:
+      * Create a CSV file named example1.txt containing few entries for (url, category, pagerank)
+      * Run the pig commands from lecture slides (Example 1) that allow you to "find, for each sufficiently large category, the average pagerank of high-pagerank urls in that category"
+
+3. Example 2
+      * Create two CSV files named example2users.txt containing (userID, user_age) and example2websites.txt containing (userID,url,timestamp) respectively
+      * Run the pig commands from lecture slides (Example 2) to "find the top 5 most visited sites by users aged in the range (18,25)"
 
 
 ## Some extra help installing PIG & HIVE:
