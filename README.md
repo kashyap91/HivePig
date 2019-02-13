@@ -67,7 +67,7 @@ You can find more query examples and SQL cheat-sheet at the links below
 1. Install Pig <https://pig.apache.org/docs/r0.15.0/start.html>
 (Optionally, install Hadoop / HDFS and Copy the source files to the HDFS)
 
-1. Toy Example:
+2. Toy Example:
       - Create two CSV file as follows:
             * A.txt containing two lines: (0,1,2) and (1,3,4)
             * B.txt containing two lines: (0,5,2) and (1,7,8)
@@ -88,11 +88,11 @@ g = FOREACH c GENERATE a2, a2*a3
 dump g;
 ```
 
-1. Example 1:
+3. Example 1:
       * Create a CSV file named example1.txt containing few entries for (url, category, pagerank)
       * Run the pig commands from lecture slides (Example 1) that allow you to "find, for each sufficiently large category, the average pagerank of high-pagerank urls in that category"
 
-1. Example 2
+4. Example 2:
       * Create two CSV files named example2users.txt containing (userID, user_age) and example2websites.txt containing (userID,url,timestamp) respectively
       * Run the pig commands from lecture slides (Example 2) to "find the top 5 most visited sites by users aged in the range (18,25)"
 
