@@ -92,7 +92,7 @@ dump g;
       * Create a CSV file named example1.txt containing few entries for (url, category, pagerank)
       * Run the pig commands from lecture slides (Example 1) that allow you to "find, for each sufficiently large category, the average pagerank of high-pagerank urls in that category"
 
-3. Example 2
+1. Example 2
       * Create two CSV files named example2users.txt containing (userID, user_age) and example2websites.txt containing (userID,url,timestamp) respectively
       * Run the pig commands from lecture slides (Example 2) to "find the top 5 most visited sites by users aged in the range (18,25)"
 
