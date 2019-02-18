@@ -2,8 +2,7 @@ This lab covers material from Week 3 and Week 4 of CA675 (Hive and Pig).
 We will install HIVE and PIG and start practicing with their basic functions separately. 
 Both of these applications can either run on top of a working HDFS / Mapreduce cluster, or they can run in local mode (useful for debugging).
 
-The Vagrantfile above (upoaded 18/2/19 4:30pm) contains working installation of Java 8, Hadoop, Pig, Hive & mrjob
-Vagrant up this file and verify everything working using:
+The Vagrantfile above (upoaded 18/2/19 4:30pm) contains working installation of Java 8, Hadoop, Pig, Hive & mrjob. Vagrant up this file and verify that everything working using:
 ```
 hadoop version
 pig -h
