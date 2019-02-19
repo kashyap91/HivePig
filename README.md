@@ -4,7 +4,7 @@ Both of these applications can either run on top of a working HDFS / Mapreduce c
 
 The Vagrantfile above (upoaded 18/2/19 4:30pm) contains working installation of Java 8, Hadoop, Pig, Hive & mrjob.
 
-Edit (19/2/19 4pm) - Ram allocation change to 2 GB to avoid memory errors with hadoop.
+Edit (19/2/19 4pm) - Ram allocation changed to 2 GB to avoid memory errors with hadoop.
 ```
 
 ## Install Java 8
