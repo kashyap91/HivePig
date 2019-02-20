@@ -10,6 +10,8 @@ The Vagrantfile above (upoaded 18/2/19 4:30pm) contains working installation of 
 
 Edit (19/2/19 4pm) - VM RAM allocation changed to 2 GB to avoid memory errors with hadoop.
 
+Edit (20/2/19 5pm) - Ubuntu version changed from trusty to xenial. Trusty going out of use in April.
+
 ## HIVE
 
 1. Install Hive (see slides Week 3 and Manual link below)
